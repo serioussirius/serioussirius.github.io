@@ -1,0 +1,129 @@
+@import url('/css/globals.css');
+
+div.posts__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -18px;
+}
+
+div.posts__column {
+    flex: 0 1 50%;
+    padding: 18px;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+div.posts__column.hero {
+    flex: 0 1 100%;
+}
+
+div.post__info {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px 12px 16px;
+}
+
+div.post__info.hero {
+    padding: 16px;
+}
+
+div.item__row {
+    display: flex;
+}
+
+div.thumbnail__tags {
+    position: absolute;
+    top: 22px;
+    left: 16px;
+    z-index: 1;
+}
+
+div.thumbnail__tags span {
+    font-family: 'Fira Code';
+    color: white;
+    padding: 6px 8px 4px 8px;
+    border-radius: var(--borderRadius);
+    background-color: var(--darkBlue);
+    user-select: none;
+}
+
+div.thumbnail__tags span:not(:last-of-type) {
+    margin-right: 8px;
+}
+
+div.post__thumbnail {
+    flex: 0 0 50%;
+    position: relative;
+    overflow: hidden;
+    max-width: calc(256px - 1px);
+    border-top-left-radius: var(--borderRadius);
+    border-bottom-left-radius: var(--borderRadius);
+}
+
+div.post__thumbnail img {
+    height: 100%;
+}
+
+div.post__thumbnail.hero {
+    flex: 0 0 50%;
+    max-width: unset;
+    max-height: unset;
+}
+
+div.info__text {
+    flex: 1 1 auto;
+}
+
+div.info__link {
+    flex: 0 0 auto;
+    font-weight: bold;
+}
+
+p.description {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Roboto', 'Helvetica Neue', sans-serif;
+    font-size: var(--largeFont);
+    color: var(--midGray);
+}
+
+p.post__description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+    margin: 8px auto;
+}
+
+@media screen and (max-width: 767px) {
+    div.posts__row {
+        margin: 0 -8px;
+    }
+
+    div.posts__column {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    div.posts__row {
+        margin: 0 -4px;
+    }
+
+    div.posts__column {
+        padding: 4px;
+    }
+
+    div.item__row {
+        display: block;
+    }
+
+    div.post__thumbnail {
+        flex: unset;
+        border-top-right-radius: var(--borderRadius);
+        border-bottom-left-radius: unset;
+    }
+
+    div.post__thumbnail img {
+        width: 100%;
+    }
+}

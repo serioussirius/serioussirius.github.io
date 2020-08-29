@@ -1,0 +1,112 @@
+@import url('/css/globals.css');
+
+div.profile {
+    margin: auto 8px;
+}
+
+div.profile__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.project__column {
+    padding: 8px;
+}
+
+div.item__info {
+    margin-bottom: 16px;
+}
+
+div.item__image {
+    padding-left: 16px;
+}
+
+h1.info__title {
+    font-family: 'Fira Code';
+    font-weight: bold;
+    font-size: var(--extraFont);
+    color: var(--darkBlue);
+}
+
+p.contentItem, a.contentItem {
+    margin-left: 8px;
+}
+
+div.info__text h3.info__subtitle {
+    text-transform: capitalize;
+}
+
+div.info__text div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+div.item__image img, div.item__thumbnail {
+    border-radius: var(--borderRadius);
+}
+
+div.gallery__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -21px;
+}
+
+div.gallery__column {
+    flex: 0 1 25%;
+    padding: 21px;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+div.gallery__item {
+    max-width: 255px;
+}
+
+h3.item__title {
+    text-transform: capitalize;
+}
+
+div.item__thumbnail {
+    margin: 8px auto;
+}
+
+@media screen and (max-width: 609px) {
+    div.profile__row {
+        justify-content: center;
+    }
+
+    div.item__image {
+        margin: 24px auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    div.gallery__row {
+        justify-content: center;
+        margin: 0 -8px;
+    }
+
+    div.gallery__column {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 519px) {
+    div.gallery__row {
+        margin: 0 -4px;
+    }
+
+    div.gallery__column {
+        flex: 0 1 50%;
+        padding: 4px;
+    }
+
+    h3.gallery__title {
+        font-size: var(--smallFont);
+    }
+}

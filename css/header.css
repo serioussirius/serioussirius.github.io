@@ -1,0 +1,25 @@
+header.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0 32px 0;
+    border-bottom: 2px dotted var(--lightGray);
+    font-family: 'Fira Code';
+    font-weight: bold;
+    font-size: var(--largeFont);
+    color: var(--darkBlue);
+}
+
+div.header__logo.basicOne {
+    margin-left: 10px;
+}
+
+ul.header__menu {
+    text-transform: capitalize;
+    margin-right: 12px;
+    padding-left: 16px;
+}
+
+ul.header__menu.basicOne {
+    margin-right: 3px;
+}
