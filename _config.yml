@@ -4,8 +4,8 @@ email:
 description:
 
 # URL options
-baseurl: "https://serioussirius.github.io"
-url: "/"
+baseurl: ""
+url: ""
 
 # Collections settings
 collections:
