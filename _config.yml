@@ -12,6 +12,7 @@ collections:
   projects:
     output: true
     permalink: /:collection/:path/
+  
 
 # Social network links
 github_username: serioussirius
