@@ -1,18 +1,23 @@
+# Basic info
 title: SeriousSirius
 email:
 description:
 
+# URL options
 baseurl: ""
 url: ""
 
+# Collections settings
 collections:
   projects:
     output: true
     permalink: /:collection/:path/
 
-twitter_username: jekyllrb
+# Social network links
 github_username: serioussirius
 
+# Build settings
 markdown: kramdown
 
+# Custom theme
 # theme: minima

@@ -2,43 +2,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/globals.css" type="text/css">
-    <link rel="stylesheet" href="/css/main.min.css" type="text/css">
-    <script src="https://kit.fontawesome.com/931d0a1ed0.js" crossorigin="anonymous"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="/js/projectFilter.js"></script>
-    <script src="/js/equalHeight.js"></script>
+    {% include head.html %}
     <title>{{ site.title }} | {{ page.title }}</title>
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="header__logo">
-                <a href="/"><img src="https://via.placeholder.com/350x150" alt="Header Logo"></a>
-            </div>
-            <ul class="header__menu">
-                <li><a class="contentLink basicLink chosenOne" href="/">Projects</a></li>
-                <li><a class="contentLink basicLink" href="/blog/">Blog</a></li>
-                <li><a class="basicLink" href="/profile/">Profile</a></li>
-            </ul>
-        </header>
+        {% include header.html %}
         <main class="container">
             {{ content }}
         </main>
-        <footer class="footer">
-            <div class="footer__copyright">
-                <span>&copy;2020 MySite.github.io</span>
-            </div>
-            <ul class="footer__menu">
-                <li><a class="basicLink" href="#"><i class="fab fa-youtube"></i></a></li>
-                <li><a class="basicLink" href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a class="basicLink" href="#"><i class="fab fa-vk"></i></a></li>
-                <li><a class="basicLink" href="#"><i class="fab fa-reddit"></i></a></li>
-                <li><a class="basicLink" href="#"><i class="fas fa-envelope"></i></a></li>
-            </ul>
-        </footer>
+        {% include footer.html %}
     </div>
 </body>
 </html>
