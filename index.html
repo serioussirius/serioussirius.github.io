@@ -12,7 +12,7 @@ title: "Projects"
     </ul>
     <div class="projects__row">
         {% for project in site.projects %}
-            <div class="projects__column" data-category="{{project.filter}}">
+            <div class="projects__column" data-category="{{ project.filter }}">
                 <div class="projects__item itemBg equalHeight">
                     <div class="project__thumbnail thumbnail">
                         <a href="{{ project.link }}">
