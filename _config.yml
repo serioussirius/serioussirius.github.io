@@ -4,8 +4,8 @@ email:
 description:
 
 # URL options
-baseurl: ""
-url: ""
+baseurl: "https://serioussirius.github.io/"
+url: "/"
 
 # Collections settings
 collections:
@@ -13,6 +13,8 @@ collections:
     output: true
     permalink: /:collection/:path/
   
+
+exclude: [".gitignore"]
 
 # Social network links
 github_username: serioussirius
