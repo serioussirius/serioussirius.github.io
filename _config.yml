@@ -7,6 +7,8 @@ url: ""
 
 collections:
   projects:
+    output: true
+    permalink: /:collection/:path/
 
 twitter_username: jekyllrb
 github_username: serioussirius
