@@ -1,6 +1,6 @@
 ---
 thumbnail: https://via.placeholder.com/256x144
 category: webDesign
-title: Project title
+title: Project title1
 link: https://serioussirius.github.io/
 ---
