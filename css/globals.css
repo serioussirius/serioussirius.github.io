@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Roboto', 'Helvetica Neue', sans-serif;
     font-size: var(--regFont);
-    background-image: url('/_site/img/backgroundImage_128x128.png');
+    background-image: url('/img/backgroundImage_128x128.png');
     object-fit: cover;
 }
 
