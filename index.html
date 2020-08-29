@@ -12,11 +12,11 @@ title: "Projects"
     </ul>
     <div class="projects__row">
         {% for project in site.projects %}
-            <div class="projects__column" data-category="webDesign">
+            <div class="projects__column" data-category="{{project.filter}}">
                 <div class="projects__item itemBg equalHeight">
                     <div class="project__thumbnail thumbnail">
                         <a href="{{ project.link }}">
-                            <img src="{{ project.thumbnail }}" alt="Project Thumbnail">
+                            <img src="{{ project.thumbnail }}" alt="{{ project.title }}">
                         </a>
                     </div>
                     <div class="project__info">
