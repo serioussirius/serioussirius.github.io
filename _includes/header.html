@@ -3,15 +3,13 @@
         <a href="/"><img src="https://via.placeholder.com/350x150" alt="Header Logo"></a>
     </div>
     <ul class="header__menu">
-        {% for item in site.data.navigation.links %}
         <li>
-            <a class="contentLink basicLink {% if item.url == page.url %} chosenOne {% endif %}" href="{{item.url}}">{{item.title}}</a>
+            <a href="{{site.baseurl}}/" class="contentLink basicLink {% if page.url == '/index.html' %}chosenOne{% endif %}">Projects</a>
         </li>
         <li>
-            <a class="contentLink basicLink {% if item.url == page.url %} chosenOne {% endif %}" href="{{item.url}}">{{item.title}}</a></li>
+            <a href="{{site.baseurl}}/blog/" class="contentLink basicLink {% if page.url == '/blog/index.html' %}chosenOne{% endif %}">Blog</a></li>
         <li>
-            <a class="basicLink {% if item.url == page.url %} chosenOne {% endif %}" href="{{item.url}}">{{item.title}}</a>            
+            <a href="{{site.baseurl}}/profile/" class="basicLink {% if page.url == '/profile/index.html' %}chosenOne{% endif %}">Profile</a>            
         </li>
-        {% endfor %}
     </ul>
 </header>
