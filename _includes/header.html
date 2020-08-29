@@ -3,9 +3,19 @@
         <a href="/"><img src="https://via.placeholder.com/350x150" alt="Header Logo"></a>
     </div>
     <ul class="header__menu">
-        <li><a class="contentLink basicLink {{% for page.url == '/' %}} chosenOne {% endfor %}" href="/">Projects</a></li>
-        <li><a class="contentLink basicLink {{% if page.url == '/blog/' %}} chosenOne {% endif %}" href="/blog/">Blog</a></li>
-        <li><a class="basicLink {{% if page.url == '/profile/' %}} chosenOne {% endif %}" href="/profile/">Profile</a>
+        <li>
+            {% for item in site.data.navigation.links %}
+            <a class="contentLink basicLink {% if item.url == page.url %} chosenOne {% endif %}" href="{{item.url}}">{{item.title}}</a>
+            {% endfor %}
+        </li>
+        <li>
+            {% for item in site.data.navigation.links %}
+            <a class="contentLink basicLink {% if item.url == page.url %} chosenOne {% endif %}" href="{{item.url}}">{{item.title}}</a></li>
+            {% endfor %}
+        <li>
+            {% for item in site.data.navigation.links %}
+            <a class="basicLink {% if item.url == page.url %} chosenOne {% endif %}" href="{{item.url}}">{{item.title}}</a>
+            {% endfor %}
         </li>
     </ul>
 </header>
