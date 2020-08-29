@@ -11,21 +11,22 @@ title: "Projects"
         <li><a class="basicLink filterLink" href="#" data-filter="frontend">Frontend</a></li>
     </ul>
     <div class="projects__row">
-        <!--PROJECT #1-->
-        <div class="projects__column" data-category="webDesign">
-            <div class="projects__item itemBg equalHeight">
-                <div class="project__thumbnail thumbnail">
-                    <a href="/projects/project/">
-                        <img src="https://via.placeholder.com/256x144" alt="Project Thumbnail">
-                    </a>
-                </div>
-                <div class="project__info">
-                    <p class="project__category category">Web-Design</p>
-                    <a href="/projects/project/">
-                        <h3 class="project__title title">Project title</h3>
-                    </a>
+        {% for projects_item in site.projects %}
+            <div class="projects__column" data-category="webDesign">
+                <div class="projects__item itemBg equalHeight">
+                    <div class="project__thumbnail thumbnail">
+                        <a href="{{ projects_item.link }}">
+                            <img src="{{ projects_item.thumbnail }}" alt="Project Thumbnail">
+                        </a>
+                    </div>
+                    <div class="project__info">
+                        <p class="project__category category">{{ projects_item.category }}</p>
+                        <a href="/projects/project/">
+                            <h3 class="project__title title">{{ projects_item.title }}</h3>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        {% endfor %}
     </div>
 </section>
