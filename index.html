@@ -15,13 +15,13 @@ css: /css/main.min.css
     <div class="projects__row">
         {% for project in site.projects %}
             <div class="projects__column" data-category="{{ project.filter }}">
-                <div class="projects__item itemBg equalHeight">
+                <div class="projects__item itemBg">
                     <div class="project__thumbnail thumbnail">
                         <a href="{{ project.url }}">
                             <img src="{{ project.thumbnail }}" alt="{{ project.title }}">
                         </a>
                     </div>
-                    <div class="project__info">
+                    <div class="project__info equalHeight">
                         <p class="project__category category">{{ project.category }}</p>
                         <a href="{{ project.url }}">
                             <h3 class="project__title title">{{ project.title }}</h3>
