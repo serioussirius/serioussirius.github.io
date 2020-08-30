@@ -1,4 +1,33 @@
 ---
 layout: default
 ---
-
+<div class="main__image thumbnail">
+    <img src="{{ page.thumbnail }}" alt="{{ page.title }}">
+</div>
+<h1 class="article__title">{{ page.title }}</h1>
+<p class="article__info">{{ page.date }} // {{ page.category }}</p>
+<div class="content">
+    <div class="article">
+        <p class="article__paragraph">
+            {{ content }}
+        </p>
+        <div class="video__container">
+            <iframe src="{{ page.featuredVideo_url }}"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar__info">
+            <h3 class="section__title subtitle">About</h3>
+            <div class="info__category">
+                <span>Category:</span>
+                <span class="contentText">{{ page.category }}</span>
+            </div>
+            <div class="info__release">
+                <span>Release date:</span>
+                <span class="contentText">{{ page.date }}</span>
+            </div>
+        </div>
+    </div>
+</div>
