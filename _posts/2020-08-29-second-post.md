@@ -2,6 +2,7 @@
 # Post thumbnail on blog page
 thumbnail: https://via.placeholder.com/256x144
 title: "Second Post"
+tags: css
 category: css
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 # Post page settings

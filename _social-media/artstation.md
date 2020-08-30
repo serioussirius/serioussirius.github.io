@@ -1,4 +1,5 @@
 ---
+# Social-Media thumbnail on profile page
 thumbnail: https://via.placeholder.com/256x144
 icon: fa-artstation
 title: Artstation

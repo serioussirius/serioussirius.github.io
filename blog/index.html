@@ -10,6 +10,9 @@ css: /css/blog.min.css
             <div class="posts__item itemBg">
                 <div class="item__row">
                     <div class="post__thumbnail thumbnail">
+                        <div class="thumbnail__tags">
+                            <span>{{ post.tags }}</span>
+                        </div>
                         <a href="{{ post.url }}">
                             <img src="{{ post.thumbnail }}" alt="{{ post.title }}">
                         </a>
