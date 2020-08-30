@@ -1,0 +1,15 @@
+<header class="header">
+    <div class="header__logo basicOne">
+        <a href="/"><img src="https://via.placeholder.com/350x150" alt="Header Logo"></a>
+    </div>
+    <ul class="header__menu basicOne">
+        <li>
+            <a href="{{site.baseurl}}/" class="contentLink basicLink {% if page.url == '/' %}chosenOne{% endif %}">Projects</a>
+        </li>
+        <li>
+            <a href="{{site.baseurl}}/blog/" class="contentLink basicLink {% if page.url == '/blog/' %}chosenOne{% endif %}">Blog</a></li>
+        <li>
+            <a href="{{site.baseurl}}/profile/" class="basicLink {% if page.url == '/profile/' %}chosenOne{% endif %}">Profile</a>            
+        </li>
+    </ul>
+</header>

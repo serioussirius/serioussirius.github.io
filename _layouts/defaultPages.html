@@ -1,0 +1,18 @@
+<!--"This is where the source begins..."
+    Designed and coded by @serioussirius-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        {% include head.html %}
+        <title>{{ site.title }} | {{ page.title }}</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            {% include headerPages.html %}
+            <main class="container">
+                {{ content }}
+            </main>
+            {% include footer.html %}
+        </div>
+    </body>
+    </html>
