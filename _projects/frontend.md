@@ -4,6 +4,6 @@ filter: frontend
 category: Frontend
 title: Project title2
 layout: project
-link: https://serioussirius.github.io/
+link: /:title
 ---
 123
