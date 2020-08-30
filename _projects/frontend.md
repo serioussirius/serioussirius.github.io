@@ -6,6 +6,7 @@ category: Frontend
 title: Project title2
 # Project page settings
 layout: project
+css: /css/project.min.css
 #Slider images
 slider_image_1: https://via.placeholder.com/1086x390.png?text=Slider+Image+1
 slider_image_2: https://via.placeholder.com/1086x390.png?text=Slider+Image+2
