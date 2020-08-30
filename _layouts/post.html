@@ -5,7 +5,7 @@ layout: default
     <img src="{{ page.thumbnail }}" alt="{{ page.title }}">
 </div>
 <h1 class="article__title">{{ page.title }}</h1>
-<p class="article__info">{{ page.date }} // {{ page.category }}</p>
+<p class="article__info">{{ page.sidebar_release }} // {{ page.category }}</p>
 <div class="content">
     <div class="article">
         <p class="article__paragraph">
@@ -23,10 +23,6 @@ layout: default
             <div class="info__category">
                 <span>Category:</span>
                 <span class="contentText">{{ page.category }}</span>
-            </div>
-            <div class="info__release">
-                <span>Release date:</span>
-                <span class="contentText">{{ page.sidebar_release }}</span>
             </div>
         </div>
     </div>
