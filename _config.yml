@@ -12,7 +12,8 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-  
+  social-media:
+    output: false
 
 exclude: [".gitignore"]
 

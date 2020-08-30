@@ -44,81 +44,24 @@ css: /css/profile.min.css
     </div>
 </div>
 <div class="gallery__wrapper">
-    <!--GALLERY FLEX CONTAINER-->
     <div class="gallery__row">
-        <!--GALLERY ITEM #1-->
-        <div class="gallery__column">
-            <div class="gallery__item">
-                <h3 class="item__title title">
-                    <i class="fab fa-youtube"></i> YouTube:
-                </h3>
-                <div class="item__thumbnail thumbnail">
-                    <a href="">
-                        <picture>
-                            <img src="https://via.placeholder.com/256x144" alt="">
-                        </picture>
-                    </a>
-                </div>
-                <div class="item__description equalHeight">
-                    <p class="category">Превью проектов, speed art, уроки по верстке и дизайну...</p>
-                </div>
-            </div>
-        </div>
-        <!--GALLERY ITEM #2-->
-        <div class="gallery__column">
-            <div class="gallery__item">
-                <h3 class="item__title title">
-                    <i class="fab fa-reddit"></i> Reddit:
-                </h3>
-                <div class="item__thumbnail thumbnail">
-                    <a href="">
-                        <picture>
-                            <img src="https://via.placeholder.com/256x144" alt="">
-                        </picture>
-                    </a>
-                </div>
-                <div class="item__description equalHeight">
-                    <p class="category">Посты о проектах, и обсуждение связанных с ними вопросов...</p>
+        {% for social-media in site.social-media %}
+            <div class="gallery__column">
+                <div class="gallery__item">
+                    <h3 class="item__title title">
+                        <i class="fab {{ social-media.icon }}"></i> {{ social-media.title }}:
+                    </h3>
+                    <div class="item__thumbnail thumbnail">
+                        <a href="{{ social-media.link }}">
+                            <picture>
+                                <img src="{{ social-media.thumbnail }}" alt="{{ social-media.title }}">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="item__description equalHeight">
+                        <p class="category">{{ social-media.description }}</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!--GALLERY ITEM #3-->
-        <div class="gallery__column">
-            <div class="gallery__item">
-                <h3 class="item__title title">
-                    <i class="fab fa-github"></i> GitHub:
-                </h3>
-                <div class="item__thumbnail thumbnail">
-                    <a href="">
-                        <picture>
-                            <img src="https://via.placeholder.com/256x144" alt="">
-                        </picture>
-                    </a>
-                </div>
-                <div class="item__description equalHeight">
-                    <p class="category">Да прибудет с Вами source code...</p>
-                </div>
-            </div>
-        </div>
-        <!--GALLERY ITEM #4-->
-        <div class="gallery__column">
-            <div class="gallery__item">
-                <h3 class="item__title title">
-                    <i class="fab fa-artstation"></i> Artstation:
-                </h3>
-                <div class="item__thumbnail thumbnail">
-                    <a href="">
-                        <picture>
-                            <img src="https://via.placeholder.com/256x144" alt="">
-                        </picture>
-                    </a>
-                </div>
-                <div class="item__description equalHeight">
-                    <p class="category">Примеры работ по графическому и 3D-дизайну...</p>
-                </div>
-            </div>
-        </div>
-        <!--GALLERY ITEM #...-->
-    </div>
-    <!--GALLERY FLEX CONTAINER-->
+        {% endfor %}
 </div>
