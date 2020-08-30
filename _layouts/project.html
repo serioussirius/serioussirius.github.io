@@ -6,20 +6,67 @@ layout: default
         <div class="slider__prev basicButton"><i class="fas fa-chevron-left"></i></div>
         <div class="slider__inner">
             <div class="slider__image thumbnail activeSlide" id="firstSlide">
-                <img src="{{ project.slider_image_1 }}"
-                    alt="Slider Image 1">
+                <img src="{{ project.slider_image_1 }}" alt="Slider Image 1">
             </div>
             <div class="slider__image thumbnail">
-                <img src="{{ project.slider_image_2 }}"
-                    alt="Slider Image 2">
+                <img src="{{ project.slider_image_2 }}" alt="Slider Image 2">
             </div>
             <div class="slider__image thumbnail" id="lastSlide">
-                <img src="{{ project.slider_image_3 }}"
-                    alt="Slider Image 3">
+                <img src="{{ project.slider_image_3 }}" alt="Slider Image 3">
             </div>
         </div>
         <div class="slider__next basicButton"><i class="fas fa-chevron-right"></i></div>
     </div>
 </div>
-
-{{ content }}
+<h1 class="project__title">Project Title</h1>
+<div class="content">
+    <!--ARTICLE ABOUT THE PROJECT-->
+    <div class="article">
+        {{ content }}
+        <div class="video__container">
+            <iframe src="https://www.youtube.com/embed/UOFRT_X3b_8"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <!--SIDEBAR-->
+    <div class="sidebar">
+        <!--SIDEBAR "INFORMATION ABOUT THE PROJECT" SECTION-->
+        <div class="sidebar__info">
+            <h3 class="section__title subtitle">About</h3>
+            <div class="info__category">
+                <span>Category:</span>
+                <span class="contentText">Illustration</span>
+            </div>
+            <div class="info__theme">
+                <span>Theme:</span>
+                <span class="contentText">Star Wars</span>
+            </div>
+            <div class="info__type">
+                <span>Type:</span>
+                <span class="contentText">Poster</span>
+            </div>
+            <div class="info__engine">
+                <span>Engine:</span>
+                <span class="contentText">Blender + Inkscape</span>
+            </div>
+            <div class="info__release">
+                <span>Release date:</span>
+                <span class="contentText">august 2020</span>
+            </div>
+        </div>
+        <div class="sidebar__featured">
+            <h3 class="section__title subtitle">Featured</h3>
+            <a class="basicLink" href="#">Official Star Wars Reddit</a>
+        </div>
+        <!--SIDEBAR "DOWNLOAD PROJECT" SECTION-->
+        <div class="sidebar__download">
+            <h3 class="section__title subtitle">Download</h3>
+            <a href="https://www.moddb.com/games/star-wars-battlefront-ii/downloads/star-wars-battlefront-ii-mod-tools-pc"
+                title="Download Star Wars Battlefront II Mod Tools (PC) - Mod DB" target="_blank"><img
+                    src="https://button.moddb.com/download/medium/101479.png"
+                    alt="Star Wars Battlefront II Mod Tools (PC)" /></a>
+        </div>
+    </div>
+    <!--SIDEBAR-->
+</div>
