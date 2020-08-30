@@ -9,7 +9,8 @@ layout: post
 css: /css/post.min.css
 date: 2020-08-29
 permalink: /:categories/:title
-# Sidebar properties
+# Sidebar and post page properties
+main_image: https://via.placeholder.com/1086x390.png
 sidebar_release: august 2020
 # Featured video
 featuredVideo_url: https://www.youtube.com/embed/t3yEhIAOeg8
