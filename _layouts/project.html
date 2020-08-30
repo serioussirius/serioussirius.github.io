@@ -21,7 +21,9 @@ layout: default
 <h1 class="project__title">{{ page.title }}</h1>
 <div class="content">
     <div class="article">
-        {{ content }}
+        <div class="article_paragraph">
+            {{ content }}
+        </div>
         <div class="video__container">
             <iframe src="{{ page.feauturedVideo_url }}"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
