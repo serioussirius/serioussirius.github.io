@@ -1,6 +1,5 @@
 ---
 layout: default
-css: /css/project.min.css
 ---
 <div class="slider">
     <div class="slider__outer">
@@ -24,13 +23,12 @@ css: /css/project.min.css
     <div class="article">
         {{ content }}
         <div class="video__container">
-            <iframe src="https://www.youtube.com/embed/UOFRT_X3b_8"
+            <iframe src="{{ page.feauturedVideo_url }}"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
     </div>
     <div class="sidebar">
-        <!--SIDEBAR "INFORMATION ABOUT THE PROJECT" SECTION-->
         <div class="sidebar__info">
             <h3 class="section__title subtitle">About</h3>
             <div class="info__category">
@@ -39,24 +37,24 @@ css: /css/project.min.css
             </div>
             <div class="info__theme">
                 <span>Theme:</span>
-                <span class="contentText">Star Wars</span>
+                <span class="contentText">{{ page.sidebar_theme }}</span>
             </div>
             <div class="info__type">
                 <span>Type:</span>
-                <span class="contentText">Poster</span>
+                <span class="contentText">{{ page.sidebar_type }}</span>
             </div>
             <div class="info__engine">
                 <span>Engine:</span>
-                <span class="contentText">Blender + Inkscape</span>
+                <span class="contentText">{{ page.sidebar_engine }}</span>
             </div>
             <div class="info__release">
                 <span>Release date:</span>
-                <span class="contentText">august 2020</span>
+                <span class="contentText">{{ page.sidebar_release }}</span>
             </div>
         </div>
         <div class="sidebar__featured">
             <h3 class="section__title subtitle">Featured</h3>
-            <a class="basicLink" href="#">Official Star Wars Reddit</a>
+            <a class="basicLink" href="{{ page.sidebar_featuredLink }}">Official Star Wars Reddit</a>
         </div>
         <!--SIDEBAR "DOWNLOAD PROJECT" SECTION-->
         <div class="sidebar__download">
