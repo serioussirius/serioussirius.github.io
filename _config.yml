@@ -15,6 +15,17 @@ collections:
   social-media:
     output: false
 
+# Defaults settings
+defaults:
+  -
+    scope:
+      path: ""
+      type: project
+    values:
+      layout: project
+      css: /css/project.min.css
+
+
 exclude: [".gitignore"]
 
 # Social network links
