@@ -25,5 +25,21 @@ layout: page
                 <span class="contentText">{{ page.category }}</span>
             </div>
         </div>
+        <div class="sidebar__related">
+            <h3 class="section__title subtitle">Related posts</h3>
+            <div class="related__posts">
+                {% assign firstCategory = page.categories | first %}
+                {% assign postsCount = 0 %}
+                {% for related__posts in site.categories[] %}
+                    {% unless page.permalink == related__posts.permalink %}
+                        {% assign postsCount = postsCount | plus: 1 %}
+                        <a href="{{ related__posts.permalink }}">{{ related__posts.title }}</a>
+                    {% endunless %}
+                    {% if postsCount == 3 %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </div>

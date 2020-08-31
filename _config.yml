@@ -12,7 +12,10 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-  social-media:
+  categories:
+    output: true
+    permalink: /categories/:path/
+  media:
     output: false
 
 # Defaults settings
@@ -22,17 +25,24 @@ defaults:
       path: ""
       type: projects
     values:
-      layout: project
+      layout: "project"
       css: /css/project.min.css
-
+  -
+    scope:
+      path: ""
+      type: categories
+    values:
+      layout: "category"
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: "post"
+      css: /css/post.min.css
+      permalink: /:categories/:title
 
 exclude: [".gitignore"]
 
-# Social network links
-github_username: serioussirius
-
 # Build settings
 markdown: kramdown
-
-# Custom theme
-# theme: minima

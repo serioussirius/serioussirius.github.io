@@ -42,21 +42,21 @@ css: /css/profile.min.css
 </div>
 <div class="gallery__wrapper">
     <div class="gallery__row">
-        {% for social-media in site.social-media %}
+        {% for media in site.media %}
             <div class="gallery__column">
                 <div class="gallery__item">
                     <h3 class="item__title title">
-                        <i class="fab {{ social-media.icon }}"></i> {{ social-media.title }}:
+                        <i class="fab {{ media.icon }}"></i> {{ media.title }}:
                     </h3>
                     <div class="item__thumbnail thumbnail">
-                        <a href="{{ social-media.link }}">
+                        <a href="{{ media.link }}">
                             <picture>
-                                <img src="{{ social-media.thumbnail }}" alt="{{ social-media.title }}">
+                                <img src="{{ media.thumbnail }}" alt="{{ media.title }}">
                             </picture>
                         </a>
                     </div>
                     <div class="item__description equalHeight">
-                        <p class="category">{{ social-media.description }}</p>
+                        <p class="category">{{ media.description }}</p>
                     </div>
                 </div>
             </div>
