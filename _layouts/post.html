@@ -28,7 +28,7 @@ layout: page
         <div class="sidebar__recent">
            <h3 class="section__title subtitle">Recent Posts</h3>
            <ul class="recent__posts">
-               {% for post in site.posts | offset: 1 limit: 5 %}
+               {% for post in site.posts | limit: 5 %}
                     <li>
                         <a href="{{ post.url }}" class="basicLink dotted">{{ post.title }}</a>
                     </li>
