@@ -39,7 +39,7 @@ defaults:
       css: /css/post.min.css
       permalink: /:categories/:title
 
-exclude: [".gitignore"]
+exclude: [".gitignore", "project.css", "post.css"]
 
 # Build settings
 markdown: kramdown
