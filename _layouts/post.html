@@ -25,9 +25,34 @@ layout: page
                 <span class="contentText">{{ page.category }}</span>
             </div>
         </div>
-        <div class="sidebar__recent">
-            {% for post in site.recent_posts limit:5 %}
-                <a href="{{ post.url }}">{{ post.title }}</a>
+        <div class="sidebar__related">
+            {% assign maxPost = 5 %}
+            {% assign minTags = 1 %}
+            {% assign maxCount = 0 %}
+
+            {% for post in site.posts %}
+                {% assign sameTags = 0 %}
+                {% assign commonTags = '' %}
+
+                {% for category in posts.categories %}
+                    {% if post.url != page.url %}
+                        {% if page.categories contains category %}
+                            {% assign sameTags = sameTags | plus: 1 %}
+                            {% capture tagmarkup %}<h3 class="subtitle">{{ category }}</h3>{% endcapture %}
+                            {% assign commonTags = commonTags | | append: tagmarkup %}
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+
+                {% if sameTags >= minTags %}
+                    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                    
+                    {% assign maxCount = maxCount | plus: 1 %}   
+
+                    {% if maxCount >= maxPosts %}
+                        {% break %}
+                    {% endif %}
+                {% endif %}
             {% endfor %}
         </div>
     </div>
