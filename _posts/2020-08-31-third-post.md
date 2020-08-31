@@ -1,7 +1,7 @@
 ---
 # Post thumbnail on blog page
 thumbnail: https://via.placeholder.com/256x144
-title: "First Post"
+title: "Third Post"
 category: css
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 # Sidebar and post page properties
