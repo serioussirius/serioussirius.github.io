@@ -12,9 +12,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-  categories:
-    output: true
-    permalink: /categories/:path/
   media:
     output: false
 
